@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0"
+        id          = "com.californiamoversusa.app"
+        versionCode = "10"
+        version     = "1.0.0">
+
+    <name>ТЕСТ. californiamoversusa.com</name>
+
+    <description>
+        California Movers offers relocation services in Southern and Northern California. ... Moving from or to California? No problems! Here is where we go. And remember - any day picap&any day delivery with same movers. Movers in Sacramento County. Moving company in Sacramento County Local and Long distance moving. Sacramento. Movers in Los Angeles County. Moving company in Los Angeles County Local and Long distance moving.
+    </description>
+
+    <author>Tadapp</author>
+
+    <preference name='phonegap-version' value='cli-9.0.0' />
+
+    <plugin name='cordova-plugin-splashscreen' />
+    <plugin name='cordova-plugin-inappbrowser' />
+
+    <gap:plugin name='onesignal-cordova-plugin' spec='2.4.5' source='npm' />
+
+    <preference name='android-build-tool' value='gradle' />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name='orientation' value='portrait' />
+
+    <preference name='windows-appx-target' value='8.1-phone' />
+    <preference name='WindowsToastCapable' value='true' />
+
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashScreenSpinnerColor" value="#007BFF" />
+    
+    <platform name="android">
+      <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+          <application android:usesCleartextTraffic="true" />
+      </edit-config>
+    </platform>
+
+
+    <platform name="android">
+        <icon src="res/android/icon/54e1f6f5873d5148309d39a691ea77b3.png" density="ldpi" />
+        <icon src="res/android/icon/4d13767e2ff5a912d961dd2bf62fb273.png" density="mdpi" />
+        <icon src="res/android/icon/e4f9834525d7b13d74efc4893d0baf9e.png" density="hdpi" />
+        <icon src="res/android/icon/4d6df8b38241bed7214cac835c1a9c0b.png" density="xhdpi" />
+        <icon src="res/android/icon/903716b65dc88e2f4eda9d4b7f24b4d4.png" density="xxhdpi" />
+        <icon src="res/android/icon/28ff7053d66e9b8b06b631fef7bf6e9e.png" density="xxxhdpi" />
+
+        <splash src="res/android/screen/b4d751945d2d6e5a6ef75317ba7398f7.png" density="port-hdpi"/>
+        <splash src="res/android/screen/c3a1152d0d646949f7962f84cec9f101.png" density="port-ldpi"/>
+        <splash src="res/android/screen/4ebc6abe55c96475df14aaaef2cb5aee.png" density="port-mdpi"/>
+        <splash src="res/android/screen/6ed4cfe5110cdf5f7b501c1c78b8ddb7.png" density="port-xhdpi"/>
+    </platform>
+
+    <platform name="ios">
+        <icon src="res/ios/icon/281c15df0183a87f48d63afbe2b5866e.png" width="180" height="180" />
+        <icon src="res/ios/icon/2ba4c86cb2ef0031614482f437d76c75.png" width="60" height="60" />
+        <icon src="res/ios/icon/d4ccc8e293099f64fe5fb3fd8622fdf9.png" width="120" height="120" />
+        <icon src="res/ios/icon/f5369bcde086e58bf5ee2a34dc8a830d.png" width="76" height="76" />
+        <icon src="res/ios/icon/9a686830c0de349a624b1f3fc2e47887.png" width="152" height="152" />
+        <icon src="res/ios/icon/7a4e812412d0410084711c597532c1ce.png" width="57" height="57" />
+        <icon src="res/ios/icon/7399c789e7be9d737af00f2fd971a02c.png" width="114" height="114" />
+        <icon src="res/ios/icon/99463fcc83d28a36c72254cd4a8503de.png" width="72" height="72" />
+        <icon src="res/ios/icon/d886a5d91421cdbd3278f300737055fa.png" width="144" height="144" />
+        <icon src="res/ios/icon/82b870de772108402e39942a7e9422eb.png" width="167" height="167" />
+        <icon src="res/ios/icon/3122e1236e1b507926c78e91ffae24f2.png" width="29" height="29" />
+        <icon src="res/ios/icon/c34eafe2c6750ba8804458ac73df03dd.png" width="58" height="58" />
+        <icon src="res/ios/icon/ad918aee791f663ac7b1e3416e480cbf.png" width="87" height="87" />
+        <icon src="res/ios/icon/473bcc4078ef69973a9828649fbdc991.png" width="167" height="167" />
+
+        <splash src="res/ios/screen/6738017cc77811843ea26725c7375a9a.png" />
+        <splash src="res/ios/screen/0d619c16997a05453c932c0828e52a98.png" />
+        <splash src="res/ios/screen/9af71fe000eff540ee82383761758be4.png" />
+        <splash src="res/ios/screen/c60ecb85959b32bd10ff491134e31a14.png" />
+        <splash src="res/ios/screen/7edb979cffdf94357d40011893105c70.png" />
+        <splash src="res/ios/screen/4c9ae01573d68fde984c31184d83a4ec.png" />
+    </platform>
+
+    <platform name="winphone">
+        <icon src="res/windows/icon/a8f95d1f1790a81cb18f485ddab27ee3.png" target="StoreLogo" />
+        <icon src="res/windows/icon/fd46d33a900cd9a561097b2c5a08903a.png" target="Square30x30Logo" />
+        <icon src="res/windows/icon/1f92684c236394d5bf7319987f6f5550.png" target="Square44x44Logo" />
+        <icon src="res/windows/icon/c388cb0692c35eb90d353bc00d026afe.png" target="Square70x70Logo" />
+        <icon src="res/windows/icon/f78c0d857b9909c0b76ce4e5854d9930.png" target="Square71x71Logo" />
+        <icon src="res/windows/icon/af35392ad216da5d7162209229cd43e1.png" target="Square150x150Logo" />
+        <icon src="res/windows/icon/bfb56e11ef0855aa4eaeecd3fbf4777b.png" target="Square310x310Logo" />
+
+        <splash src="res/windows/screen/7eba6ba78d5b1900c6fa4a03420b1246.png" target="SplashScreen"/>
+        <splash src="res/windows/screen/313f332099ea1937e477bc1ac8e71d97.png" target="SplashScreenPhone"/>
+    </platform>
+
+    <access origin='*'/>
+    <plugin name='cordova-plugin-whitelist' />
+    <allow-intent href='http://*/*'/>
+    <allow-intent href='https://*/*'/>
+    <allow-intent href='tel:*'/>
+    <allow-intent href='sms:*'/>
+    <allow-intent href='mailto:*'/>
+    <allow-intent href='geo:*'/>
+
+</widget>
